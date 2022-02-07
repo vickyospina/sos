@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<!--ENCABEZADO DE LA PÁGINA-->
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="Author" lang="es" content="Vicky Ospina" />
+  <meta name="keywords" content="sos, sos para tu vida, iglesia cristiana" />
+  <meta name="description"
+    content="Iglesia Cristiana S.O.S. Para tu vida, donde lo sobrenatural es natural. Somos una Iglesia con un espíritu joven, en el amor de Dios y bajo la unción del Espíritu Santo" />
+  <meta name="robots" content="index, follow" />
+  
+  <link rel="shortcut icon" href="./img/logo.jpg" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+    <!--WHATSAPP FLOTANTE-->
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <a href="https://api.whatsapp.com/send?phone=573168322463&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20-Tengo%20una%20petición%20de%20oración"
+    class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float"></i>
+  </a>
+  <link rel="stylesheet" href="./css/whats.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./css/whats2.css">
+  <div class="nav-bottom">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <div class="popup-whatsapp fadeIn">
+      <div class="content-whatsapp -top"><button type="button" class="closePopup">
+          <i class="material-icons icon-font-color">close</i>
+        </button>
+        <p> <img src="./img/secretary.png" width="50"> Hola, ¿en qué podemos ayudarte? </p>
+      </div>
+      <div class="content-whatsapp -bottom">
+        <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+        <button class="send-msPopup" id="send-btn" type="button">
+          <i class="material-icons icon-font-color--black">send</i>
+        </button>
+      </div>
+    </div>
+    <button type="button" id="whats-openPopup" class="whatsapp-button">
+      <div class="float">
+        <i class="fa fa-whatsapp my-float"></i>
+      </div>
+    </button>
+    <div class="circle-anime"></div>
+  </div>
+  <script src="./js/whatsapp.js"></script>
+
+  <title>S.O.S. Para Tu Vida</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<!--CUERPO DE LA PÁGINA-->
+
+<!--<body class="hidden">
+
+  <div class="centrado" id="onload">
+      <div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+-->
+  <header>
+
+    <!--MENÚ NAVEGACIÓN-->
+
+    <nav id="nav" class="nav1">
+      <div class="contenedor-nav">
+        <div class="logo">
+          <img src="./img/senayimberuahlogo.png" alt="LogoSOS" />
+        </div>
+        <div class="enlaces" id="enlaces">
+          <a href="#" id="enlace-inicio" class="btn-header"><b>Inicio</b></a>
+          <a href="#reuniones" id="enlace-visitanos" class="btn-header">Visítanos</a>
+          <a href="#enlinea" id="enlace-enlinea" class="btn-header">SOS en Línea</a>
+          <a href="#anuncios" id="enlace-anuncios" class="btn-header">Anuncios</a>
+          <a href="#donaciones" id="enlace-donaciones" class="btn-header">Donaciones</a>
+        </div>
+        <div class="redes">
+          <a href="https://www.facebook.com/sosparatuvida" target="_blank"> <svg xmlns="http://www.w3.org/2000/svg"
+              width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path
+                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+            </svg></a>
+          <a href="https://www.instagram.com/sosparatuvida/?hl=es" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-instagram"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+            </svg>
+          </a>
+         <a href="https://www.youtube.com/c/sosparatuvida" target="_blank">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-youtube"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+            </svg>
+          </a>
+        </div>
+        <div class="icono" id="open">
+          <span>&#9776;</span>
+        </div>
+      </div>
+    </nav>
+
+    <!--TEXTO DE BIENVENIDA-->
+
+    <div class="textos">
+      <h1><strong>S.O.S. Para Tu Vida</strong></h1>
+      <h2>Donde lo sobrenatural, es natural!</h2>
+      <h6>
+        Somos una iglesia con un espíritu joven, en el amor de Dios, bajo la
+        unción del Espíritu Santo.
+      </h6>
+    </div>
+
+  </header>
+
+  <main>
+    <!--SECCION DE UBICACIÓN Y HORARIOS-->
+
+    <section class="reuniones" id="reuniones">
+      <div class="contenedor">
+        <h3><b>Nuestras reuniones</b></h3>
+        <p>MIÉRCOLES Y JUEVES <b>7:15 PM</b> <br>
+          SÁBADOS <b>6:30 PM</b> <br>
+          DOMINGOS <b>9:00 AM & 11:15 AM</b></p>
+        <h6> Carrera 49 N° 78D Sur 26 (Sabaneta – Colombia)</h6>
+        <br>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1549.5481797829252!2d-75.626792!3d6.15173!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x89ac5df1ed6c2ea2!2sS.O.S%20Iglesia%20Cristiana%20-%20SOSParatuvida!5e1!3m2!1ses!2sus!4v1643995091057!5m2!1ses!2sus"
+          width="1040" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </section>
+
+    <!--SECCIÓN DE VIDEOS Y TRANSMISIÓN EN VIVO-->
+
+    <section class="work contenedor" id="enlinea">
+      <h3><b>Visítanos OnLine</b></h3>
+      <a href="https://www.youtube.com/watch?v=PSOd4qM824k" class="btn btn-danger" type="button" target="_blank"><svg
+          xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wifi"
+          viewBox="0 0 16 16">
+          <path
+            d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z" />
+          <path
+            d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z" />
+        </svg><b> Ver transmisión en vivo</b></a>
+      <p class="after"></p>
+
+      <div class="galeria-work">
+
+        <!--PRÉDICAS-->
+
+        <div class="cont-work predicas">
+          <div class="img-work">
+            <iframe width="683" height="384"
+              src="https://www.youtube.com/embed/9qvYC2xpO6s?list=PL_4h24lzV4uDyez9a9Mq2rgiJPdJY5YIY"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="textos-work">
+            <h4><b>Prédicas</b></h4>
+          </div>
+        </div>
+
+<!--REFLEXIONES-->
+
+        <div class="cont-work reflexiones">
+          <div class="img-work">
+            <iframe width="683" height="384"
+              src="https://www.youtube.com/embed/rsLAgiLHozU?list=PL_4h24lzV4uDAFTgO2HewSeGWfK77e0Bn"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="textos-work">
+            <h4><b>Reflexiones</b></h4>
+          </div>
+        </div>
+
+        <!--CRÓNICAS-->
+
+        <div class="cont-work cronicas">
+          <div class="img-work">
+            <iframe width="683" height="384" src="https://www.youtube.com/embed/0kX9UGchnUQ"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+          <div class="textos-work">
+            <h4><b>Crónicas de Fé</b></h4>
+          </div>
+        </div>
+    </section>
+
+    <!--SECCIÓN DE ANUNCIOS Y EVENTOS-->
+
+    <section class="anuncios contenedor" id="anuncios">
+      <h3> <b>Próximos Eventos</b></h3><br>
+      <p class="after">
+        S.O.S es un ministerio donde queremos edificar el amor de Jesús en los hogares y en la familia, compartiendo
+        bajo la sabiduría y el orden de la palabra de Dios, por eso estamos comprometidos con cada corazón que visita
+        este lugar el cual tendrá conciencia de que jamás vuelve a ser el mismo.
+      </p>
+      <div class="slider">
+        <ul>
+          <li><img src="./img/anuncio.jpg" alt="" />
+          </li>
+          <li><img src="./img/anuncio1.jpg" alt="" />
+          </li>
+          <li><img src="./img/anuncio2.jpg" alt="" />
+          </li>
+          <li><img src="./img/anuncio3.jpg" alt="" />
+          </li>
+        <li><img src="./img/anuncio4.jpg" alt="" />
+        </li>
+        </ul>
+      </div>
+    </section>
+
+<!--SECCIÓN DE CUENTA AHORROS-->
+
+    <section class="donaciones contenedor" id="donaciones">
+      <h3> <b> Ayúdanos a expandir la obra</b></h3><br>
+      <img src="./img/donaciones.jpg" alt="donaciones">
+    </section>
+
+  </main>
+
+  <!--PIE DE LA PÁGINA-->
+
+  <footer id="contacto">
+    <div class="footer contenedor">
+
+      <div class="marca-logo">
+        <img src="./img/sosparatuvidalogo.png" alt="Logo" />
+      </div>
+
+      <div class="iconos">
+        <a href="https://www.facebook.com/sosparatuvida" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-facebook"
+            viewBox="0 0 16 16">
+            <path
+              d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+          </svg>
+        </a>
+
+        <a href="https://www.instagram.com/sosparatuvida/?hl=es" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-instagram"
+            viewBox="0 0 16 16">
+            <path
+              d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z" />
+          </svg>
+        </a>
+
+        <a href="https://www.youtube.com/c/sosparatuvida" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-youtube"
+            viewBox="0 0 16 16">
+            <path
+              d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z" />
+          </svg>
+        </a>
+
+      </div>
+     
+      <div class="container">
+        <hr><br>
+        <p> <b>© 2022 SOS para tu vida</b>
+          <br> Todos los derechos reservados | <small>Desarrollo: Victoria Ospina G.</small>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+  <script src="js/jquery.js"></script>
+</body>
+</html>
